@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+ <!-- js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!--webfonts-->
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//webfonts--> 
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+
+<style type="text/css">
+	button{
+		color: rgb(100, 100, 100);
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    cursor:pointer;
+	    overflow: hidden;
+	    outline:none;
+	}
+	.glyphicon-remove{
+		color: rgb(212, 106, 64);
+	}
+	.glyphicon-pencil{
+		color: rgb(	60,60,60);
+	}
+ 	#search1{
+ 		border-width: 0;
+ 		
+ 	  	width:100%;
+ 	  		overflow: auto;
+ 	}
+ 	#search2{
+ 		border-width: 0;
+		background-color:#f5f5f5;
+	  
+	    width:100%;
+	    	overflow: auto;
+ 	}
+
+</style>
+<!--//Metis Menu -->
+</head> 
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<!--left-fixed -navigation-->
+		<div class=" sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+					<ul class="nav" id="side-menu">
+						<li>
+							<a href="index.html"><i class="fa fa-home nav_icon"></i>Home</a>
+						</li>
+						<li>
+							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
+						</li>
+						<li>
+							<a href="upload_rubrics.html"><i class="glyphicon glyphicon-open-file nav_icon"></i>Upload Rubric</a>
+						</li>
+						<li>
+							<a href="feedback_by_ten_rules.html"><i class="fa fa-check-square-o nav_icon"></i>Feedback by ten rules</span></a>
+						</li>
+						<li>
+							<a href="upload_students_data.html"><i class="glyphicon glyphicon-cloud-upload nav_icon"></i>Upload Students Data</span></a>
+						</li>
+						<li>
+							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
+						</li>
+						<li>
+							<a href="login.html"><i class="fa fa-sign-out nav_icon"></i>Logout</a>
+						</li>
+					</ul>
+					<div class="clearfix"> </div>
+					<!-- //sidebar-collapse -->
+				</nav>
+			</div>
+		</div>
+		<!--left-fixed -navigation-->
+		<!-- header-starts -->
+		<div class="sticky-header header-section ">
+			<div class="header-left">
+				<!--toggle button start-->
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<!--toggle button end-->
+				<!--logo -->
+				<div class="logo">
+					<a href="index.html">
+						<h1>Logo</h1>
+						<span>subtitle</span>
+					</a>
+				</div>
+				<!--//logo-->
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-right">
+				<!--notification menu end -->
+				<div class="profile_details">		
+					<ul>
+						<li class="dropdown profile_details_drop">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<div class="profile_img">	
+									<span class="prfil-img"><img src="images/a.png" alt=""> </span> 
+									<div class="user-name">
+										<p>User1</p>
+										<span>Educator</span>
+									</div>
+									<i class="fa fa-angle-down lnr"></i>
+									<i class="fa fa-angle-up lnr"></i>
+									<div class="clearfix"></div>	
+								</div>	
+							</a>
+							<ul class="dropdown-menu drp-mnu">
+								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
+								<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
+								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>	
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+		<!-- //header-ends -->
+		<!-- main content start-->
+		<div id="page-wrapper">
+			<div class="main-page">
+				<div class="tables">
+					<h3 class="title1">Rubrics</h3>
+					<div class="bs-example widget-shadow" data-example-id="contextual-table"> 
+						<h4>Rubric Input:</h4>										
+							<div style="float:right; display:inline;">
+ 								<button class="btn btn-success" data-toggle="modal" data-target="#myModal1">
+									Add Criteria
+								</button> 
+							</div>
+
+							<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+							    <div class="modal-dialog">
+							        <div class="modal-content">
+							            <div class="modal-header">
+							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							                <h4 class="modal-title" id="myModalLabel1">Add a criteria</h4>
+							            </div>
+							            <div class="modal-body" style="text-align:center">
+							            	<input id="criteriaInput" style="width:90%;" type="textarea" placeholder="Please input a criteria" />
+							            </div>
+							            <div class="modal-footer">
+							                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							                <button id="criteriaInputButton" class="btn btn-primary" data-dismiss="modal">Add</button>
+							            </div>
+							        </div><!-- /.modal-content -->
+							    </div><!-- /.modal -->
+							</div>
+
+						<table class="table" style="table-layout:fixed;word-break:break-all;">
+							<thead>
+								<tr id="tabeltr"> 
+									<th>#</th>				
+									<th width="20%" style="text-align: center;"><span>Understanding</span><br/> 
+										<button class='glyphicon glyphicon-chevron-left'  onclick="left(this)"/>
+										<button class='glyphicon glyphicon-chevron-right' onclick="right(this)"  />  
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal3" onclick="updateCriteria(this)" />
+										<button class='glyphicon glyphicon-remove' onclick="removeCriteria(this)" />
+									</th> 
+									<th width="20%" style="text-align: center;"><span>Design</span> <br/> 
+										<button class='glyphicon glyphicon-chevron-left'  onclick="left(this)"/>
+										<button class='glyphicon glyphicon-chevron-right' onclick="right(this)"  />  
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal3" onclick="updateCriteria(this)" />
+										<button class='glyphicon glyphicon-remove' onclick="removeCriteria(this)" />
+									</th> 
+									<th width="20%" style="text-align: center;"><span>Correctness</span> <br/>
+										<button class='glyphicon glyphicon-chevron-left'  onclick="left(this)"/>
+										<button class='glyphicon glyphicon-chevron-right' onclick="right(this)"  />  
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal3" onclick="updateCriteria(this)" />
+										<button class='glyphicon glyphicon-remove' onclick="removeCriteria(this)" />
+									</th> 
+									<th width="20%" style="text-align: center;"><span>Structure</span> <br/>
+										<button class='glyphicon glyphicon-chevron-left'  onclick="left(this)"/>
+										<button class='glyphicon glyphicon-chevron-right' onclick="right(this)"  />  
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal3" onclick="updateCriteria(this)" />
+										<button class='glyphicon glyphicon-remove' onclick="removeCriteria(this)" />
+									</th> 
+								</tr> 
+							</thead> 
+							<tbody id="tablebody" > 
+								<tr id="tabeltr"> 
+									<th scope="row"><span>Outstanding</span><br/>
+										<button class='glyphicon glyphicon-chevron-up'  onclick="up(this)"/>
+										<button class='glyphicon glyphicon-chevron-down' onclick="down(this)"  />  
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)" />
+										<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)" />
+									</th>
+									<!-- 								<td><input type="textarea" id="search1"></td>
+									<td><input type="textarea" id="search1"></td>
+									<td><input type="textarea" id="search1"></td>
+									<td><input type="textarea" id="search1"></td> -->
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+														
+								</tr> 
+								<tr id="tabeltr"> 
+									<th scope="row"><span>Excellent</span><br/>  
+										<button class='glyphicon glyphicon-chevron-up'   onclick="up(this)" />
+										<button class='glyphicon glyphicon-chevron-down' onclick="down(this)" />
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)"/>
+										<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)" />
+									</th> 
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+								
+								</tr> 
+								<tr id="tabeltr"> 
+									<th scope="row"><span>Good</span><br/> 
+										<button class='glyphicon glyphicon-chevron-up'  onclick="up(this)" />
+										<button class='glyphicon glyphicon-chevron-down' onclick="down(this)" />
+										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)"/>
+										<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)"/>
+									</th> 
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									
+								</tr> 
+								<tr id="tabeltr"> 
+									<th scope="row"><span>Unsatisfactory</span><br/>
+										<button class='glyphicon glyphicon-chevron-up'  onclick="up(this)"/>
+										<button class='glyphicon glyphicon-chevron-down' onclick="down(this)"/>
+									 	<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)"/>
+									 	<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)"/>
+										<!--绑定模态话弹出窗口--> 
+									</th> 
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+					
+								</tr> 
+							</tbody> 
+						</table> 
+
+						<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+						    <div class="modal-dialog">
+						        <div class="modal-content">
+						            <div class="modal-header">
+						                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						                <h4 class="modal-title" id="myModalLabel4">Update Level</h4>
+						            </div>
+						            <div class="modal-body" style="text-align:center">
+						            	<input id="levelUpdate" style="width:90%;" type="textarea"/>
+						            </div>
+						            <div class="modal-footer">
+						                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						                <button id="levelUpdateButton"type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+						            </div>
+						        </div><!-- /.modal-content -->
+						    </div><!-- /.modal -->
+						</div>
+
+						<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+						    <div class="modal-dialog">
+						        <div class="modal-content">
+						            <div class="modal-header">
+						                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						                <h4 class="modal-title" id="myModalLabel3">Update Level</h4>
+						            </div>
+						            <div class="modal-body" style="text-align:center">
+						            	<input id="criteriaUpdate" style="width:90%;" type="textarea"/>
+						            </div>
+						            <div class="modal-footer">
+						                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						                <button id="criteriaUpdateButton"type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+						            </div>
+						        </div><!-- /.modal-content -->
+						    </div><!-- /.modal -->
+						</div>
+						<div>
+							<button class="btn btn-success" data-toggle="modal" data-target="#myModal2">
+								Add Level
+							</button>
+
+							<div style="float:right">
+								<button class="btn btn-primary" onclick="submit()">
+									Submit
+								</button>
+							</div>
+							<div style="float:right">
+								<button class="btn btn-default" onclick="back()">
+									Back
+								</button>
+							</div>
+						</div>	
+
+						<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+						    <div class="modal-dialog">
+						        <div class="modal-content">
+						            <div class="modal-header">
+						                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						                <h4 class="modal-title" id="myModalLabel2">Add a Level</h4>
+						            </div>
+						            <div class="modal-body" style="text-align:center">
+						            	<input id="levelInput" style="width:90%;" type="textarea" placeholder="Please input a level" />
+						            </div>
+						            <div class="modal-footer">
+						                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						                <button id="levelInputButton"type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+						            </div>
+						        </div><!-- /.modal-content -->
+						    </div><!-- /.modal -->
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var $updateLevelNum;
+			var $updateCriteriaNum;
+			var $flag=0;
+
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+				
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+
+
+
+			function criteriaButton(Criteria){
+				 $("thead tr").append("<th width=0% style='text-align: center;'>"+Criteria+"<br/><button class='glyphicon glyphicon-chevron-left'  onclick='left(this)'/><button class='glyphicon glyphicon-chevron-right' onclick='right(this)'/><button class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#myModal4' onclick='updateCriteria(this)'/><button class='glyphicon glyphicon-remove' onclick='removeCriteria(this)' /></th>");
+			 	$("#tablebody tr:odd").append("<td><textarea id='search2' placeholder='write rubric here'></textarea></td>");
+
+			 	$("#tablebody tr:even").append("<td><textarea id='search1' placeholder='write rubric here'/></textarea></td>");
+				 updatewidth();
+			}
+			function zebraLines(){
+				$("#tablebody tr:odd").attr("class","active");
+				$("#tablebody tr:odd textarea").attr("id","search2");
+				$("#tablebody tr:even").attr("class","");
+				$("#tablebody tr:even textarea").attr("id","search1");
+			}
+
+			function levelButton(Level){
+				$mtr = $("#tablebody tr:last").clone();
+				$("#tablebody").append($mtr);
+				$("#tablebody tr:last th:last").html("<span>"+Level+"</span><br/><button class='glyphicon glyphicon-chevron-up'  onclick='up(this)'/><button class='glyphicon glyphicon-chevron-down' onclick='down(this)'/><button class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#myModal4' onclick='updateLevel(this)' /><button class='glyphicon glyphicon-remove' onclick='removeLevel(this)' />")
+				zebraLines();
+			}
+
+			$(document).ready(function(){
+				$("#tablebody tr:odd").attr("class","active");			//斑马线
+				$("#levelInputButton").click(function(){				//为模态框的add按钮添加事件
+					var level = $("#levelInput").val();
+					if(level==null || level==''){
+						alert("Fail, input can not be empty!");
+					}else{
+						levelButton(level);
+					}
+				});
+
+				$("#criteriaInputButton").click(function(){				//为模态框的add按钮添加事件
+					var Criteria = $("#criteriaInput").val();	
+					if(Criteria==null || Criteria==''){
+						alert("Fail, input can not be empty!");
+					}else{
+						criteriaButton(Criteria);
+					}
+				});	
+
+				$("#levelUpdateButton").click(function(){				//为模态框的add按钮添加事件
+					$updateLevelNum.parent().parent().children('th').children('span').text($("#levelUpdate").val());
+				});		
+
+				$("#criteriaUpdateButton").click(function(){				//为模态框的add按钮添加事件
+					$updateCriteriaNum.parent().children('span').text($("#criteriaUpdate").val());
+				});	
+
+			});	
+
+			function removeLevel(id){				//为模态框的add按钮添加事件
+				if(confirm("Confirm to delete?")){
+					id.parentNode.parentNode.remove();
+					zebraLines();
+				}		
+			};	
+
+
+			function updateLevel(id){				//为模态框的add按钮添加事件
+				var $id = $(id);
+				$updateLevelNum=$id;
+				var $text = $id.parent().parent().children('th').children('span').text();
+				$("#myModal4 input[id='levelUpdate']").val($text);
+			};	
+
+
+			function updateCriteria(id){				//为模态框的add按钮添加事件
+				var $id = $(id);
+				$updateCriteriaNum=$id;
+				var $text = $id.parent().children('span').text();
+				$("#myModal3 input[id='criteriaUpdate']").val($text);
+			};	
+
+			function up(id){				//为模态框的add按钮添加事件
+				var $id = $(id);
+				if($id.parent().parent().prev()!=null ){
+					//alert($id.parent().parent().prev().children('th').children('span').text());
+					$id.parent().parent().after($id.parent().parent().prev());
+					zebraLines();
+				}		
+			};
+
+			function down(id){				//为模态框的add按钮添加事件
+				var $id = $(id);
+				if($id.parent().parent().next()!=null){
+					//alert($id.parent().parent().next().children('th').children('span').text());
+					$id.parent().parent().before($id.parent().parent().next());
+					zebraLines();
+				}		
+			};
+
+			function left(id){				//为模态框的add按钮添加事件
+				var $id = $(id);
+				if($id.parent().prev()!=null && $id.parent().prev().children('button').length>0){
+					//alert($id.parent().parent().prev().children('th').children('span').text());
+					$id.parent().after($id.parent().prev());
+					zebraLines();
+				}		
+			};
+
+			function right(id){				//为模态框的add按钮添加事件
+				var $id = $(id);
+				if($id.parent().next()!=null){
+					//alert($id.parent().parent().prev().children('th').children('span').text());
+					$id.parent().before($id.parent().next());
+					zebraLines();
+				}		
+			};
+
+			function removeCriteria(id){				//为模态框的add按钮添加事件
+				if(confirm("Confirm to delete?")){
+					id.parentNode.remove();
+					updatewidth();
+				}		
+			};	
+
+			function updatewidth(){
+				var width=100/($("thead tr th").length);
+				width=width+"%";
+				$("tbody tr th").attr("width",width)
+				$("thead tr th").attr("width",width)
+				$("tr td").attr("width",width)
+			}
+
+			function submit(){
+				window.location.href = "feedback_by_ten_rules.html";
+			}
+			function back(){
+				window.location.href = "index.html";
+			}
+		</script>
+
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.js"> </script>
+</body>
+</html>

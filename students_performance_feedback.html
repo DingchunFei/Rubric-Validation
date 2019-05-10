@@ -1,0 +1,855 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+ <!-- js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!--webfonts-->
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//webfonts--> 
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+
+<style type="text/css">
+	button{
+		color: rgb(100, 100, 100);
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    cursor:pointer;
+	    overflow: hidden;
+	    outline:none;
+	}
+	.glyphicon-remove{
+		color: rgb(212, 106, 64);
+	}
+	.glyphicon-pencil{
+		color: rgb(	60,60,60);
+	}
+	th{
+		  text-align: center;
+	}
+
+</style>
+<!--//Metis Menu -->
+</head> 
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<!--left-fixed -navigation-->
+		<div class=" sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+					<ul class="nav" id="side-menu">
+						<li>
+							<a href="index.html"><i class="fa fa-home nav_icon"></i>Home</a>
+						</li>
+						<li>
+							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
+						</li>
+						<li>
+							<a href="upload_rubrics.html"><i class="glyphicon glyphicon-open-file nav_icon"></i>Upload Rubric</a>
+						</li>
+						<li>
+							<a href="feedback_by_ten_rules.html"><i class="fa fa-check-square-o nav_icon"></i>Feedback by ten rules</span></a>
+						</li>
+						<li>
+							<a href="upload_students_data.html"><i class="glyphicon glyphicon-cloud-upload nav_icon"></i>Upload Students Data</span></a>
+						</li>
+						<li>
+							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
+						</li>
+						<li>
+							<a href="login.html"><i class="fa fa-sign-out nav_icon"></i>Logout</a>
+						</li>
+					</ul>
+					<div class="clearfix"> </div>
+					<!-- //sidebar-collapse -->
+				</nav>
+			</div>
+		</div>
+		<!--left-fixed -navigation-->
+		<!-- header-starts -->
+		<div class="sticky-header header-section ">
+			<div class="header-left">
+				<!--toggle button start-->
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<!--toggle button end-->
+				<!--logo -->
+				<div class="logo">
+					<a href="index.html">
+						<h1>Logo</h1>
+						<span>subtitle</span>
+					</a>
+				</div>
+				<!--//logo-->
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-right">
+				<!--notification menu end -->
+				<div class="profile_details">		
+					<ul>
+						<li class="dropdown profile_details_drop">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<div class="profile_img">	
+									<span class="prfil-img"><img src="images/a.png" alt=""> </span> 
+									<div class="user-name">
+										<p>User1</p>
+										<span>Educator</span>
+									</div>
+									<i class="fa fa-angle-down lnr"></i>
+									<i class="fa fa-angle-up lnr"></i>
+									<div class="clearfix"></div>	
+								</div>	
+							</a>
+							<ul class="dropdown-menu drp-mnu">
+								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
+								<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
+								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>	
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+		<!-- //header-ends -->
+		<!-- main content start-->
+		<div id="page-wrapper">
+			<div class="main-page">
+				<div class="tables">
+					<div class="bs-example widget-shadow" data-example-id="hoverable-table"> 
+						<h4>Guttman Chart:</h4>
+						<table class="table table-hover" id="rubric_table" style="text-align: center"> <thead> 
+						 <tr > 
+						 	<th>#</th> 
+						 	<th width="4%">1</th>
+						 	<th width="4%">2</th> 
+						 	<th width="4%">3</th> 
+						 	<th width="4%">4</th> 
+						 	<th width="4%">5</th> 
+						 	<th width="4%">6</th> 
+						 	<th width="4%">7</th> 
+						 	<th width="4%" class="warning">8</th> 
+						 	<th width="4%">9</th> 
+						 	<th width="4%">10</th> 
+						 	<th width="4%" class="warning">11</th> 
+						 	<th width="4%">12</th> 
+						 	<th width="4%">13</th> 
+						 	<th width="4%" class="warning">14</th> 
+						 	<th width="4%">15</th> 
+						 	<th width="4%">16</th> 
+						 	<th width="4%">17</th> 
+						 	<th width="4%">18</th> 
+						 	<th width="4%">19</th> 
+	 					 	<th width="4%">20</th> 
+						 	<th width="4%">21</th> 
+						 	<th width="4%">22</th> 
+						 	<th width="4%">23</th> 
+		 				 	<th width="6%">SUM</th> 
+						</tr> 
+						</thead> 
+						<tbody> 
+							<tr> 
+								<th scope="row">A</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td>  
+								<td>0</td>  
+								<td>20</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">B</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>  
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td>  
+								<td>0</td> 
+								<td>19</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">C</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>  								
+								<td>16</td> 
+							</tr> 
+							<tr> <th scope="row">D</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td>  
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td>
+								<td>0</td> 
+								<td>15</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">E</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td>   
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>14</td> 
+							</tr> 
+							<tr> 
+								<th scope="row"  class="warning">F</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td>  
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>14</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">G</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>11</td> 
+							</tr> 
+							<tr> <th scope="row">H</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>11</td> 
+							</tr> 
+							<tr> 
+								<th scope="row" class="warning">I</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>11</td>
+							</tr>
+							<tr> 
+								<th scope="row">J</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>11</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">K</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>11</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">L</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>10</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">M</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td>
+								<td>10</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">N</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>8</td> 
+							</tr> 
+							<tr> <th scope="row">O</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>8</td>  
+							</tr> 
+							<tr> 
+								<th scope="row">P</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>7</td> 
+							</tr> 
+							<tr> <th scope="row">Q</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>7</td>
+							</tr> 
+							<tr> 
+								<th scope="row">R</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>5</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">S</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>1</td>
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>0</td> 
+								<td>5</td> 
+							</tr> 
+							<tr> 
+								<th scope="row">T</th> 
+								<td>1</td> 
+								<td>1</td> 
+								<td>0</td>
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>1</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td> 
+								<td>0</td>
+								<td>4</td> 
+						</tbody> 
+						</table> 
+					</div>
+					<div class="bs-example widget-shadow" data-example-id="hoverable-table"> 
+						<h4>Students' Analysis:</h4>
+						<table class="table table-hover" style="text-align: center"> 
+							<thead> 
+								<tr> 
+									<th width="1%"  style="text-align: center">Colour</th> 
+									<th  width="50%" style="text-align: center">Analysis</th>
+									<th  style="text-align: center">Student Name</th> 
+								</tr> 
+							</thead> 
+							<tbody> 
+								<tr> 
+									<th scope="row" class="success"></th> 
+									<td>Outstanding</td> 
+									<td>A</td> 
+								</tr> 
+								<tr> 
+									<th scope="row" class="success"></th> 
+									<td>Outstanding</td> 
+									<td>B</td> 
+								</tr> 
+								<tr> 
+									<th scope="row" class="danger"></th> 
+									<td>Poor Performance</td> 
+									<td>R</td> 
+								</tr>
+								<tr> 
+									<th scope="row" class="danger"></th> 
+									<td>Poor Performance</td> 
+									<td>S</td> 
+								</tr> 
+								<tr> 
+									<th scope="row" class="danger"></th> 
+									<td>Poor Performance</td> 
+									<td>T</td> 
+								</tr>
+								<tr> 
+									<th scope="row" class="danger"></th> 
+									<td>Inconsistent Performance</td> 
+									<td>F</td> 
+								</tr> 
+								<tr> 
+									<th scope="row" class="danger"></th> 
+									<td>Inconsistent Performance</td> 
+									<td>I</td> 
+								</tr> 
+							</tbody> 
+						</table>
+						<br/>
+
+						<h4>Rubric's Analysis:</h4>
+						<table class="table table-hover" style="text-align: center"> 
+							<thead> 
+								<tr> 
+									<th width="1%"  style="text-align: center">Colour</th> 
+									<th  width="50%"  style="text-align: center">Analysis</th>
+									<th  style="text-align: center">Criteria</th> 
+								</tr> 
+							</thead> 
+							<tbody> 
+								<tr> 
+									<th scope="row" class="warning"></th> 
+									<td>Inconsistent Criteria</td> 
+									<td>8</td> 
+								</tr> 
+								<tr> 
+									<th scope="row" class="warning"></th> 
+									<td>Inconsistent Criteria</td> 
+									<td>11</td> 
+								</tr> 
+								<tr> 
+									<th scope="row" class="warning"></th> 
+									<td>Inconsistent Criteria</td> 
+									<td>14</td> 
+								</tr> 
+							</tbody> 
+						</table>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- Classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+				
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+
+			function upload_students_data(){
+				window.location.href = "upload_students_data.html";
+			}
+
+			function export_feedback(){
+				window.location.href = "#";
+			}
+
+			$(document).ready(function(){
+				//$("#rubric_table th").attr("class","active");
+				$("#rubric_table tbody tr td").each(function(){
+					if($(this).text()==1){
+						$(this).attr("class","active");
+					}
+				 });
+				$("#rubric_table tbody tr td:last-child").each(function(){			
+					if($(this).text()<7){													//poor behaviour
+						$(this).parent().children("th").attr("class","danger");
+					}
+				 });
+				$("#rubric_table tbody tr td:last-child").each(function(){
+					if($(this).text()>=19){													//outstanding
+						$(this).parent().children("th").attr("class","success");
+					}
+				 });
+
+
+			});	
+
+
+
+		</script>
+
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.js"> </script>
+</body>
+</html>
