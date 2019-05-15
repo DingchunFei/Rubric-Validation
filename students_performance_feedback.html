@@ -70,15 +70,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
 						</li>
 						<li>
-							<a href="upload_rubrics.html"><i class="glyphicon glyphicon-open-file nav_icon"></i>Upload Rubric</a>
-						</li>
-						<li>
-							<a href="feedback_by_ten_rules.html"><i class="fa fa-check-square-o nav_icon"></i>Feedback by ten rules</span></a>
-						</li>
-						<li>
-							<a href="upload_students_data.html"><i class="glyphicon glyphicon-cloud-upload nav_icon"></i>Upload Students Data</span></a>
-						</li>
-						<li>
 							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
 						</li>
 						<li>
@@ -127,7 +118,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<ul class="dropdown-menu drp-mnu">
 								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
 								<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
-								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								<li> <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a> </li>
 							</ul>
 						</li>
 					</ul>
@@ -139,8 +130,39 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 		<!-- //header-ends -->
 		<!-- main content start-->
 		<div id="page-wrapper">
+
 			<div class="main-page">
+				<div class="forms">
+					<h3 class="title1">Upload student data</h3>
+					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
+						<div class="form-title">
+							<h4>Click the 'browse' button below and select the 'csv' or 'xls' contains students` data in your computer</h4>
+						</div>
+						<div class="form-body">
+							<form action="students_performance_feedback.html"> 
+								<div class="form-group"> 
+									<!-- <label for="exampleInputFile">File input</label>  -->
+									<input  type="file" id="exampleInputFile"> 
+									<p class="help-block">Please upload a document in .csv or .xls format</p> 
+								</div> 
+								<div style="display: inline-block; margin-right:10px">
+									<button type="button" class="btn" onclick="back()">Back</button>
+								</div>
+								<div style="display: inline-block; margin-left:10px">
+									<button type="button" class="btn btn-primary" onclick="students_performance_feedback()">Submit</button>
+								</div>
+							</form> 
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="main-page" id="feedback" style="display:none;">
 				<div class="tables">
+					<h3 class="title1">Post Assessment Rubric Analysis</h3>
 					<div class="bs-example widget-shadow" data-example-id="hoverable-table"> 
 						<h4>Guttman Chart:</h4>
 						<table class="table table-hover" id="rubric_table" style="text-align: center"> <thead> 
@@ -788,6 +810,22 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								</tr> 
 							</tbody> 
 						</table>
+						<div style="margin-top: 20px">
+
+							<div style="float:right">
+								<button class="btn btn-success">
+									Export Feedback
+								</button>
+							</div>
+							<div style="float:right">
+								<button class="btn btn-default" onclick="back()">
+									Back
+								</button>
+							</div>
+							<div style="display: hidden; min-height:40px">
+								
+							</div>
+						</div>
 					</div>
 			</div>
 		</div>
@@ -837,10 +875,18 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						$(this).parent().children("th").attr("class","success");
 					}
 				 });
-
+				$("#feedback").attr("style","display:none;");
 
 			});	
 
+			function back(){
+				window.location.href = "index2.html";
+			}
+
+			function students_performance_feedback(){
+				$("#feedback").attr("style","display:show;");
+				window.location.href = "#feedback";
+			}
 
 
 		</script>

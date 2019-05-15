@@ -62,11 +62,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	    width:100%;
 	    	overflow: auto;
  	}
-
+	textarea{
+		text-align: center
+	}
 </style>
 <!--//Metis Menu -->
 </head> 
 <body class="cbp-spmenu-push">
+
 	<div class="main-content">
 		<!--left-fixed -navigation-->
 		<div class=" sidebar" role="navigation">
@@ -78,15 +81,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li>
 							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
-						</li>
-						<li>
-							<a href="upload_rubrics.html"><i class="glyphicon glyphicon-open-file nav_icon"></i>Upload Rubric</a>
-						</li>
-						<li>
-							<a href="feedback_by_ten_rules.html"><i class="fa fa-check-square-o nav_icon"></i>Feedback by ten rules</span></a>
-						</li>
-						<li>
-							<a href="upload_students_data.html"><i class="glyphicon glyphicon-cloud-upload nav_icon"></i>Upload Students Data</span></a>
 						</li>
 						<li>
 							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
@@ -137,7 +131,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<ul class="dropdown-menu drp-mnu">
 								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
 								<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
-								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								<li> <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a> </li>
 							</ul>
 						</li>
 					</ul>
@@ -149,14 +143,46 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 		<!-- //header-ends -->
 		<!-- main content start-->
 		<div id="page-wrapper">
+
+
+
+			<div class="main-page">
+				<div class="forms">
+					<h3 class="title1">Upload Rubrics</h3>
+					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
+						<div class="form-title">
+							<h4>Click the 'browse' button below and select the 'csv' or 'xls' contains rubrics in your computer</h4>
+						</div>
+						<div class="form-body">
+							<form> 
+								<div class="form-group"> 
+									<!-- <label for="exampleInputFile">File input</label>  -->
+									<input  type="file" id="exampleInputFile"> 
+									<p class="help-block">Please upload a document in .csv or .xls format</p> 
+								</div> 
+								<div style="display: inline-block; margin-right:10px">
+									<button type="button" class="btn" onclick="back()">Back</button>
+								</div>
+								<div style="display: inline-block; margin-left:10px">
+									<button type="button" class="btn btn-primary" onclick="index2()">Submit</button>
+								</div>
+							</form> 
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	
+			<br/>
+
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">Rubrics</h3>
+					<h3 class="title1">Input Rubric</h3>
 					<div class="bs-example widget-shadow" data-example-id="contextual-table"> 
-						<h4>Rubric Input:</h4>										
+						<h4>Input Rubric:</h4>										
 							<div style="float:right; display:inline;">
  								<button class="btn btn-success" data-toggle="modal" data-target="#myModal1">
-									Add Criteria
+									Add Criterion
 								</button> 
 							</div>
 
@@ -212,7 +238,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<tr id="tabeltr"> 
 									<th scope="row"><span>Outstanding</span><br/>
 										<button class='glyphicon glyphicon-chevron-up'  onclick="up(this)"/>
-										<button class='glyphicon glyphicon-chevron-down' onclick="down(this)"  />  
+										<button class='glyphicon glyphicon-chevron-down' onclick="down(this)"/>  
 										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)" />
 										<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)" />
 									</th>
@@ -315,7 +341,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								</button>
 							</div>
 							<div style="float:right">
-								<button class="btn btn-default" onclick="back()">
+								<button class="btn btn-success" >
+									Export Rurbic
+								</button>
+							</div>
+							<div style="float:right">
+								<button type="button" class="btn btn-default" onclick="back()">
 									Back
 								</button>
 							</div>
@@ -344,6 +375,78 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 			</div>
+
+
+			<br/>
+			<div class="main-page" id="feedback">
+				<div class="tables">
+					<h3 class="title1">Rubric Feedback</h3>
+					<div class="bs-example widget-shadow" data-example-id="contextual-table"> 
+						<div><h4 style="text-align: center">Feedback:</h4>	<div>									
+						<table class="table">
+							<tbody id="tablebody" > 
+								<tr id="tabeltr" class="active"> 
+									<th scope="row"><span>Feedback 1:</span><br/>
+									</th>
+									<td>The rubrics violate rule 2. <br> The language used in criteria XXX is ambiguous.</td>
+
+								</tr> 
+								<tr id="tabeltr" > 
+									<th scope="row"><span>Feedback 2:</span><br/>
+									</th>
+									<td>The rubrics violate rule 6. <br>Please restrict description of quality to what students can do in creiteria XXX.</td>
+
+								</tr> 								
+								<tr id="tabeltr" class="active"> 
+									<th scope="row"><span>Feedback 3:</span><br/>
+									</th>
+									<td>The rubrics follow rule 3</td>
+
+								</tr> 
+								<tr id="tabeltr" > 
+									<th scope="row"><span>Feedback 4:</span><br/>
+									</th>
+
+									<td>The rubrics follow rule 7</td>
+								</tr> 
+								<tr id="tabeltr" class="active"> 
+									<th scope="row"><span>Feedback 5:</span><br/>
+									</th>
+
+									<td>The rubrics follow rule 9</td>
+								</tr> 
+								<tr id="tabeltr" > 
+									<th scope="row"><span>Feedback 6:</span><br/>
+									</th>
+
+									<td>The rubrics follow rule 10</td>
+								</tr> 
+							</tbody> 
+						</table>
+						<div style="text-align: center">
+							<div style="display: inline-block;">
+								<button type="button" class="btn btn-default" onclick="back()">Back</button>
+							</div>
+							<div style="display: inline-block;">
+								<button type="button" class="btn btn-success" onclick="edit_rubric()">Edit Rubric</button>
+							</div>
+							<div style="display: inline-block;">
+								<button type="button" class="btn btn-success" onclick="export_rubric()">Export Rubric</button>
+							</div>
+							<div style="display: inline-block;">
+								<button type="button" class="btn btn-success" onclick="export_feedback()">Export feedback</button>
+							</div>
+							<div style="display: inline-block;">
+								<button type="button" class="btn btn-primary" onclick="students_feedback()">Students' data</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 		</div>
 	</div>
 	<!-- Classie -->
@@ -363,14 +466,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				classie.toggle( menuLeft, 'cbp-spmenu-open' );
 				disableOther( 'showLeftPush' );
 			};
-			
+
+
 			function disableOther( button ) {
 				if( button !== 'showLeftPush' ) {
 					classie.toggle( showLeftPush, 'disabled' );
 				}
 			}
-
-
 
 			function criteriaButton(Criteria){
 				 $("thead tr").append("<th width=0% style='text-align: center;'>"+Criteria+"<br/><button class='glyphicon glyphicon-chevron-left'  onclick='left(this)'/><button class='glyphicon glyphicon-chevron-right' onclick='right(this)'/><button class='glyphicon glyphicon-pencil' data-toggle='modal' data-target='#myModal4' onclick='updateCriteria(this)'/><button class='glyphicon glyphicon-remove' onclick='removeCriteria(this)' /></th>");
@@ -394,7 +496,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			}
 
 			$(document).ready(function(){
-				$("#tablebody tr:odd").attr("class","active");			//斑马线
+				$("#tablebody tr:odd").attr("class","active");			//斑马�?
 				$("#levelInputButton").click(function(){				//为模态框的add按钮添加事件
 					var level = $("#levelInput").val();
 					if(level==null || level==''){
@@ -402,6 +504,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					}else{
 						levelButton(level);
 					}
+					disablebutton();	
 				});
 
 				$("#criteriaInputButton").click(function(){				//为模态框的add按钮添加事件
@@ -411,6 +514,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					}else{
 						criteriaButton(Criteria);
 					}
+					disablebutton();	
 				});	
 
 				$("#levelUpdateButton").click(function(){				//为模态框的add按钮添加事件
@@ -421,13 +525,46 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					$updateCriteriaNum.parent().children('span').text($("#criteriaUpdate").val());
 				});	
 
+
+				$(".glyphicon-chevron-down").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-down:last").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-down:last").attr("style","disabled: true");
+
+				$(".glyphicon-chevron-up").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-up:first").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-up:first").attr("style","disabled: true");
+
+				$(".glyphicon-chevron-right").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-right:last").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-right:last").attr("style","disabled: true");
+
+				$(".glyphicon-chevron-left").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-left:first").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-left:first").attr("style","disabled: true");
+
+				$("#feedback").attr("style","display:none;");
 			});	
+			function disablebutton(){
+				$(".glyphicon-chevron-down").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-down:last").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-down:last").attr("style","disabled: true");
+				$(".glyphicon-chevron-up").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-up:first").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-up:first").attr("style","disabled: true");
+				$(".glyphicon-chevron-right").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-right:last").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-right:last").attr("style","disabled: true");
+				$(".glyphicon-chevron-left").attr("style","color:rgb(100, 100, 100)");
+				$(".glyphicon-chevron-left:first").attr("style","color:rgb(200, 200, 200)");
+				//$(".glyphicon-chevron-left:first").attr("style","disabled: true");
+			}
 
 			function removeLevel(id){				//为模态框的add按钮添加事件
 				if(confirm("Confirm to delete?")){
 					id.parentNode.parentNode.remove();
 					zebraLines();
 				}		
+				disablebutton();
 			};	
 
 
@@ -436,6 +573,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				$updateLevelNum=$id;
 				var $text = $id.parent().parent().children('th').children('span').text();
 				$("#myModal4 input[id='levelUpdate']").val($text);
+				disablebutton();
 			};	
 
 
@@ -444,6 +582,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				$updateCriteriaNum=$id;
 				var $text = $id.parent().children('span').text();
 				$("#myModal3 input[id='criteriaUpdate']").val($text);
+				disablebutton();
 			};	
 
 			function up(id){				//为模态框的add按钮添加事件
@@ -452,7 +591,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					//alert($id.parent().parent().prev().children('th').children('span').text());
 					$id.parent().parent().after($id.parent().parent().prev());
 					zebraLines();
-				}		
+				}	
+				disablebutton();	
 			};
 
 			function down(id){				//为模态框的add按钮添加事件
@@ -462,6 +602,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					$id.parent().parent().before($id.parent().parent().next());
 					zebraLines();
 				}		
+				disablebutton();
 			};
 
 			function left(id){				//为模态框的add按钮添加事件
@@ -470,7 +611,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					//alert($id.parent().parent().prev().children('th').children('span').text());
 					$id.parent().after($id.parent().prev());
 					zebraLines();
-				}		
+				}	
+				disablebutton();	
 			};
 
 			function right(id){				//为模态框的add按钮添加事件
@@ -480,13 +622,16 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 					$id.parent().before($id.parent().next());
 					zebraLines();
 				}		
+				disablebutton();
 			};
 
 			function removeCriteria(id){				//为模态框的add按钮添加事件
 				if(confirm("Confirm to delete?")){
 					id.parentNode.remove();
 					updatewidth();
-				}		
+					$("tbody tr td:last-child").remove();
+				}
+				disablebutton();		
 			};	
 
 			function updatewidth(){
@@ -498,11 +643,17 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			}
 
 			function submit(){
-				window.location.href = "feedback_by_ten_rules.html";
+				$("#feedback").attr("style","display:show;");
+				window.location.href = "#feedback";
 			}
 			function back(){
 				window.location.href = "index.html";
 			}
+
+			function students_feedback(){
+				window.location.href = "students_performance_feedback.html";
+			}
+
 		</script>
 
 	<!--scrolling js-->

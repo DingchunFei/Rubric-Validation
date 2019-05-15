@@ -48,15 +48,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
 						</li>
 						<li>
-							<a href="upload_rubrics.html"><i class="glyphicon glyphicon-open-file nav_icon"></i>Upload Rubric</a>
-						</li>
-						<li>
-							<a href="feedback_by_ten_rules.html"><i class="fa fa-check-square-o nav_icon"></i>Feedback by ten rules</span></a>
-						</li>
-						<li>
-							<a href="upload_students_data.html"><i class="glyphicon glyphicon-cloud-upload nav_icon"></i>Upload Students Data</span></a>
-						</li>
-						<li>
 							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
 						</li>
 						<li>
@@ -105,7 +96,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<ul class="dropdown-menu drp-mnu">
 								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
 								<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
-								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								<li> <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a> </li>
 							</ul>
 						</li>
 					</ul>
@@ -134,18 +125,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</div>
 					<div class="col-md-6 panel-grids">
-						<div class="panel panel-primary"> 
-							<div class="panel-heading"> 
-								<h3 class="panel-title">Input Rubric</h3> 
-							</div> 
-							<div class="panel-body"> <span>Start your validation by input rubrics </span>
-								<div style="float:right">
-									<button type="button" class="btn btn-primary" onclick="input_rubric()"> Input Rubric</button>
-								</div>
-							</div>		
-						</div>
-					</div>
-					<div class="col-md-6 panel-grids">
 						<div class="panel panel-default">
 							<div class="panel-heading"> 
 								<h3 class="panel-title">Upload Data</h3> 
@@ -157,18 +136,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							</div>	
 						</div>
 					</div>
-					<div class="col-md-6 panel-grids">
-						<div class="panel panel-default">
-							<div class="panel-heading"> 
-								<h3 class="panel-title">LMS Data</h3> 
-							</div> 
-							<div class="panel-body"> <span>Input students` data from LMS</span>
-								<div style="float:right">
-									<button type="button" class="btn btn-default" onclick="lms_data()">LMS Data</button>
-								</div>
-							</div>	
-						</div>
-					</div>
+
 					<div class="clearfix"> </div>
 				</div>
 			</div>
@@ -194,13 +162,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				}
 			}
 			function upload_students_data(){
-				window.location.href = "upload_students_data.html";
+				window.location.href = "students_performance_feedback.html";
 			}
 			function input_rubric(){
 				window.location.href = "input_rubric.html";
 			}
 			function upload_rubric(){
-				window.location.href = "upload_rubrics.html";
+				window.location.href = "input_rubric.html";
 			}
 			function lms_data(){
 				window.location.href = "https://app.lms.unimelb.edu.au/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_41_1";
