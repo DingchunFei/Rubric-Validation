@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Tables</title>
+<title>Rubric Validation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -80,10 +80,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a href="index.html"><i class="fa fa-home nav_icon"></i>Home</a>
 						</li>
 						<li>
-							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
+							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Rubric Validation</a>
 						</li>
 						<li>
-							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
+							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Guttman Analysis</a>
 						</li>
 						<li>
 							<a href="login.html"><i class="fa fa-sign-out nav_icon"></i>Logout</a>
@@ -120,7 +120,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<div class="profile_img">	
 									<span class="prfil-img"><img src="images/a.png" alt=""> </span> 
 									<div class="user-name">
-										<p>User1</p>
+										<p>Jessica</p>
 										<span>Educator</span>
 									</div>
 									<i class="fa fa-angle-down lnr"></i>
@@ -148,23 +148,17 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Upload Rubrics</h3>
+					<h3 class="title1">Upload Your Rubric</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
-						<div class="form-title">
-							<h4>Click the 'browse' button below and select the 'csv' or 'xls' contains rubrics in your computer</h4>
-						</div>
 						<div class="form-body">
 							<form> 
 								<div class="form-group"> 
 									<!-- <label for="exampleInputFile">File input</label>  -->
 									<input  type="file" id="exampleInputFile"> 
-									<p class="help-block">Please upload a document in .csv or .xls format</p> 
+									<p class="help-block" style="font-size:15px;">You can upload your local rubric in the format of .csv or .xlsx.</p> 
 								</div> 
-								<div style="display: inline-block; margin-right:10px">
-									<button type="button" class="btn" onclick="back()">Back</button>
-								</div>
 								<div style="display: inline-block; margin-left:10px">
-									<button type="button" class="btn btn-primary" onclick="index2()">Submit</button>
+									<button type="button" class="btn btn-primary" onclick="index2()">Upload</button>
 								</div>
 							</form> 
 						</div>
@@ -174,12 +168,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			</div>
 	
 			<br/>
-
+			<hr/>
 			<div class="main-page">
+			  <h3 class="title1">Rubric Editor</h3>	
 				<div class="tables">
-					<h3 class="title1">Input Rubric</h3>
-					<div class="bs-example widget-shadow" data-example-id="contextual-table"> 
-						<h4>Input Rubric:</h4>										
+					<div class="bs-example widget-shadow" data-example-id="contextual-table"> 										
 							<div style="float:right; display:inline;">
  								<button class="btn btn-success" data-toggle="modal" data-target="#myModal1">
 									Add Criterion
@@ -207,7 +200,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<table class="table" style="table-layout:fixed;word-break:break-all;">
 							<thead>
 								<tr id="tabeltr"> 
-									<th>#</th>				
+									<th></th>				
 									<th width="20%" style="text-align: center;"><span>Understanding</span><br/> 
 										<button class='glyphicon glyphicon-chevron-left'  onclick="left(this)"/>
 										<button class='glyphicon glyphicon-chevron-right' onclick="right(this)"  />  
@@ -246,10 +239,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 									<td><input type="textarea" id="search1"></td>
 									<td><input type="textarea" id="search1"></td>
 									<td><input type="textarea" id="search1"></td> -->
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
 														
 								</tr> 
 								<tr id="tabeltr"> 
@@ -259,10 +252,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)"/>
 										<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)" />
 									</th> 
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
 								
 								</tr> 
 								<tr id="tabeltr"> 
@@ -272,10 +265,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 										<button class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#myModal4" onclick="updateLevel(this)"/>
 										<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)"/>
 									</th> 
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search1" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search1" placeholder="write specification here"></textarea></td>
 									
 								</tr> 
 								<tr id="tabeltr"> 
@@ -286,10 +279,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 									 	<button class='glyphicon glyphicon-remove' onclick="removeLevel(this)"/>
 										<!--绑定模态话弹出窗口--> 
 									</th> 
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
-									<td><textarea id="search2" placeholder="write rubric here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
+									<td><textarea id="search2" placeholder="write specification here"></textarea></td>
 					
 								</tr> 
 							</tbody> 
@@ -335,19 +328,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								Add Level
 							</button>
 
-							<div style="float:right">
+							<div style="float:right; margin-left: 5px">
 								<button class="btn btn-primary" onclick="submit()">
-									Submit
+									View Feedback
 								</button>
 							</div>
 							<div style="float:right">
-								<button class="btn btn-success" >
+								<button class="btn btn-primary" >
 									Export Rurbic
-								</button>
-							</div>
-							<div style="float:right">
-								<button type="button" class="btn btn-default" onclick="back()">
-									Back
 								</button>
 							</div>
 						</div>	
@@ -376,8 +364,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 
-
 			<br/>
+			<hr/>
 			<div class="main-page" id="feedback">
 				<div class="tables">
 					<h3 class="title1">Rubric Feedback</h3>
@@ -389,7 +377,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 									<th scope="row"><span>Feedback 1:</span><br/>
 									</th>
 									<td>The rubrics violate rule 2. <br> The language used in criteria XXX is ambiguous.</td>
-
 								</tr> 
 								<tr id="tabeltr" > 
 									<th scope="row"><span>Feedback 2:</span><br/>
@@ -409,35 +396,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 									<td>The rubrics follow rule 7</td>
 								</tr> 
-								<tr id="tabeltr" class="active"> 
-									<th scope="row"><span>Feedback 5:</span><br/>
-									</th>
-
-									<td>The rubrics follow rule 9</td>
-								</tr> 
-								<tr id="tabeltr" > 
-									<th scope="row"><span>Feedback 6:</span><br/>
-									</th>
-
-									<td>The rubrics follow rule 10</td>
-								</tr> 
 							</tbody> 
 						</table>
 						<div style="text-align: center">
 							<div style="display: inline-block;">
-								<button type="button" class="btn btn-default" onclick="back()">Back</button>
-							</div>
-							<div style="display: inline-block;">
-								<button type="button" class="btn btn-success" onclick="edit_rubric()">Edit Rubric</button>
-							</div>
-							<div style="display: inline-block;">
-								<button type="button" class="btn btn-success" onclick="export_rubric()">Export Rubric</button>
-							</div>
-							<div style="display: inline-block;">
-								<button type="button" class="btn btn-success" onclick="export_feedback()">Export feedback</button>
-							</div>
-							<div style="display: inline-block;">
-								<button type="button" class="btn btn-primary" onclick="students_feedback()">Students' data</button>
+								<button type="button" class="btn btn-primary" onclick="export_rubric()">Export Feedback With Rubric</button>
 							</div>
 						</div>
 					</div>
@@ -496,7 +459,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			}
 
 			$(document).ready(function(){
-				$("#tablebody tr:odd").attr("class","active");			//斑马�?
+				$("#tablebody tr:odd").attr("class","active");			//斑马�?
 				$("#levelInputButton").click(function(){				//为模态框的add按钮添加事件
 					var level = $("#levelInput").val();
 					if(level==null || level==''){
