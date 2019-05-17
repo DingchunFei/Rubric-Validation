@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Tables</title>
+<title>Guttman Analysis</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -67,10 +67,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a href="index.html"><i class="fa fa-home nav_icon"></i>Home</a>
 						</li>
 						<li>
-							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Input Rubrics</a>
+							<a href="input_rubric.html"><i class="fa fa-table nav_icon"></i>Rubric Validation</a>
 						</li>
 						<li>
-							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Students Performance Feedback</a>
+							<a href="students_performance_feedback.html"><i class="fa fa-check-square-o nav_icon"></i>Guttman Analysis</a>
 						</li>
 						<li>
 							<a href="login.html"><i class="fa fa-sign-out nav_icon"></i>Logout</a>
@@ -107,7 +107,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								<div class="profile_img">	
 									<span class="prfil-img"><img src="images/a.png" alt=""> </span> 
 									<div class="user-name">
-										<p>User1</p>
+										<p>Jessica</p>
 										<span>Educator</span>
 									</div>
 									<i class="fa fa-angle-down lnr"></i>
@@ -133,23 +133,17 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Upload student data</h3>
+					<h3 class="title1">Upload Student Data</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
-						<div class="form-title">
-							<h4>Click the 'browse' button below and select the 'csv' or 'xls' contains students` data in your computer</h4>
-						</div>
 						<div class="form-body">
 							<form action="students_performance_feedback.html"> 
 								<div class="form-group"> 
 									<!-- <label for="exampleInputFile">File input</label>  -->
 									<input  type="file" id="exampleInputFile"> 
-									<p class="help-block">Please upload a document in .csv or .xls format</p> 
+									<p class="help-block">Please your student data in .csv or .xlsx format</p> 
 								</div> 
-								<div style="display: inline-block; margin-right:10px">
-									<button type="button" class="btn" onclick="back()">Back</button>
-								</div>
 								<div style="display: inline-block; margin-left:10px">
-									<button type="button" class="btn btn-primary" onclick="students_performance_feedback()">Submit</button>
+									<button type="button" class="btn btn-primary" onclick="students_performance_feedback()">Upload</button>
 								</div>
 							</form> 
 						</div>
@@ -162,7 +156,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 			<div class="main-page" id="feedback" style="display:none;">
 				<div class="tables">
-					<h3 class="title1">Post Assessment Rubric Analysis</h3>
+					<h3 class="title1">Guttman Analysis</h3>
 					<div class="bs-example widget-shadow" data-example-id="hoverable-table"> 
 						<h4>Guttman Chart:</h4>
 						<table class="table table-hover" id="rubric_table" style="text-align: center"> <thead> 
@@ -734,7 +728,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						</table> 
 					</div>
 					<div class="bs-example widget-shadow" data-example-id="hoverable-table"> 
-						<h4>Students' Analysis:</h4>
+						<h4>The Analysis of Students:</h4>
 						<table class="table table-hover" style="text-align: center"> 
 							<thead> 
 								<tr> 
@@ -783,7 +777,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						</table>
 						<br/>
 
-						<h4>Rubric's Analysis:</h4>
+						<h4>The Analysis of Rubric:</h4>
 						<table class="table table-hover" style="text-align: center"> 
 							<thead> 
 								<tr> 
@@ -810,18 +804,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 								</tr> 
 							</tbody> 
 						</table>
-						<div style="margin-top: 20px">
+						<div style="margin-top: 20px; text-align: center;">
 
-							<div style="float:right">
-								<button class="btn btn-success">
+							<div style="display: inline-block;">
+								<button class="btn btn-primary">
 									Export Feedback
 								</button>
 							</div>
-							<div style="float:right">
-								<button class="btn btn-default" onclick="back()">
-									Back
-								</button>
-							</div>
+
 							<div style="display: hidden; min-height:40px">
 								
 							</div>
